@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="kalevala.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:kalevala"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Grid 0 begins -->
+        <StackPanel Margin="10,0,0,0" Grid.Column="0">
+            <StackPanel>
+            <TextBlock Text="Kalevalan kalaretki" FontSize="50"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,10">
+                
+                <Image Source="Assets/water.png" Height="100" Width="750"/>
+                <Button x:Name="WaterButton" Click="WaterButton_Click" Margin="10,10,10,10">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Assets/water.png"/>
+                    </StackPanel>
+                    
+                </Button>
+            </StackPanel>
+            
+        </StackPanel>
+        <!-- Grid 0 ends -->
+        
+        <!-- Grid 1 begins-->
+        <StackPanel Margin="10,0,0,0" Grid.Column="1">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="Pisteet" FontSize="30" Padding="20,20,20,0"/>
+                
+            </StackPanel>
+            <StackPanel Margin="10,0,0,0" Orientation="Horizontal">
+                <TextBlock Text="nimi" FontSize="30" Padding="50,0,0,0"/>
+                <TextBlock Text ="Points" FontSize="30" Padding="70,0,0,0" />
+            </StackPanel>
+            <StackPanel Margin="10,0,0,0" Orientation="Horizontal">
+                <TextBlock Text="Nimi" FontSize="30" Padding="50,2,0,0"/>
+                <TextBlock Text="Points" FontSize="30" Padding="70,0,0,0"/>
+            </StackPanel>
+        </StackPanel>
+        <!-- Grid 1 ends -->
+
+    </Grid>
+</Page>
