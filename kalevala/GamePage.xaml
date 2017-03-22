@@ -20,6 +20,7 @@
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center"/>
             </StackPanel>
+            
             <StackPanel Margin="10,10,10,10">
                 
                 <Image Source="Assets/water.png" Height="100" Width="750"/>
@@ -27,7 +28,6 @@
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Assets/water.png"/>
                     </StackPanel>
-                    
                 </Button>
             </StackPanel>
             

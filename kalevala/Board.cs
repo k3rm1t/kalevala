@@ -18,7 +18,7 @@ namespace kalevala
         public int PointCounter { get; set; }
         public List<Panel> Panels { get; set; }
         public GameStatus Status { get; set; }
-        public GameBoard(int width, int height, int fishes) // find out about this
+       /* public GameBoard(int width, int height, int fishes) // find out about this
         {
             Width = width;
             Height = height;
@@ -34,7 +34,7 @@ namespace kalevala
                 }
             }
             Status = GameStatus.InProgress;
-        }
+        }*/
         public enum GameStatus
         {
             InProgress,
@@ -44,10 +44,10 @@ namespace kalevala
         public void PlaceFishes(int x, int y, Random rand)
         {
            
-            foreach (var fishCoord in GameBoard) // work here
+           /* foreach (var fishCoord in GameBoard) // work here
             {
                 Panels.Single(panel => panel.X == 0);
-            }
+            }*/
             
         }
     }

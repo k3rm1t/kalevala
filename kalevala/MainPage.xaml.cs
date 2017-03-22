@@ -34,7 +34,8 @@ namespace kalevala
 
         private void HighScore_Click(object sender, RoutedEventArgs e)
         {
-
+            // no done yet
+            //Frame.Navigate(typeof(HighScore));
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)

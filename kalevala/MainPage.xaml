@@ -8,37 +8,42 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="720" VerticalAlignment="Bottom">
-       <!--
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>-->
-        <StackPanel Margin="10,10,0,0" >
-            <TextBlock Text="Kalevalan kalaretki" FontSize="50"
-                       VerticalAlignment="Top"
-                       HorizontalAlignment="Center"/>
-        </StackPanel>
-        <StackPanel Margin="10,10,10,0" >
-            <TextBlock Text="Pelaaja 1" Width="100" FontSize="20" Margin="10,70,0,0"/>
-            <TextBox x:Name="Player1" Width="250"/>
-        </StackPanel>
-        <StackPanel Margin="0,0,0,0" >
-            <TextBlock Text="Pelaaja 2" Width="100" FontSize="20" Margin="10,140,0,0"/>
-            <TextBox x:Name="Player2" Width="250" Margin="515,0"/>
-        </StackPanel>
-        <Button x:Name="StartButton" Content="Aloita peli"
+        <RelativePanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="720" Width="1280">
+            <StackPanel>
+                <!-- tama ei nay jostain syysta kun ajaa.?-->
+            <StackPanel Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" >
+                <TextBlock Text="Kalevalan kalaretki" FontSize="50"
+                       />
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBlock Text="Pelaaja 1" Width="100" FontSize="20" Padding="10,10,0,0"/>
+                <TextBox x:Name="Player1" Width="250"/>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0" >
+                <TextBlock Text="Pelaaja 2" Width="100" FontSize="20" VerticalAlignment="Center" Margin="10,10,0,0"/>
+                    <TextBox x:Name="Player2" Width="250" Margin="515,0"/><!-- tama laittaa kaiken keskelle?-->
+            </StackPanel>
+
+            <Button x:Name="StartButton" Content="Aloita peli"
+                   
+                Width="100" Height="30"
                 HorizontalAlignment="Center"
-                
                 VerticalAlignment="Center"
-                Click="StartButton_Click" Margin="589,220,604,468" RenderTransformOrigin="0.522,-2.562"/>
-        <Button x:Name="HighScore" Content="Tulokset"   
-                HorizontalAlignment="Center"
-                Margin="600,276,604,412" RenderTransformOrigin="0.605,-1.125"
+                Click="StartButton_Click" Margin="10,10,10,10" RenderTransformOrigin="0.522,-2.562"/>
+
+            <Button x:Name="HighScore" Content="Tulokset"   
+                
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Width="100" Height="30"
+                Margin="10,10,10,10" RenderTransformOrigin="0.605,-1.125"
                 Click="HighScore_Click"/>
-        <Button x:Name="ExitButton"
+            <Button x:Name="ExitButton"
+                Width="100" Height="30"
                 Content="Lopeta"
                 Click="ExitButton_Click"
-                HorizontalAlignment="Center" RenderTransformOrigin="0.682,2" Margin="600,332,614,356"/>
+                HorizontalAlignment="Center" RenderTransformOrigin="0.682,2" Margin="10,10,10,10"/>
+            </StackPanel>
+        </RelativePanel>
+        
     </Grid>
 </Page>

@@ -15,10 +15,10 @@ namespace kalevala
         public string Player1 { get; set; }
         public string Player2 { get; set; }
         // constructor
-        public Player(string name)
+        public Player(string name1,string name2)
         {
-            Player1 = name;
-            Player2 = name;
+            Player1 = name1;
+            Player2 = name2;
         }
     }
 }
