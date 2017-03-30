@@ -36,5 +36,10 @@ namespace kalevala
         {
 
         }
+
+        private void EndGame_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

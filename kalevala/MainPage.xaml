@@ -8,20 +8,20 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="720" VerticalAlignment="Bottom">
-        <RelativePanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="720" Width="1280">
+        <RelativePanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0" >
             <StackPanel>
-                <!-- tama ei nay jostain syysta kun ajaa.?-->
+                
             <StackPanel Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" >
                 <TextBlock Text="Kalevalan kalaretki" FontSize="50"
                        />
             </StackPanel>
-            <StackPanel Margin="10,10,10,0">
+            <StackPanel Margin="10,10,10,0" HorizontalAlignment="Center">
                 <TextBlock Text="Pelaaja 1" Width="100" FontSize="20" Padding="10,10,0,0"/>
                 <TextBox x:Name="Player1" Width="250"/>
             </StackPanel>
-            <StackPanel Margin="10,10,10,0" >
+            <StackPanel Margin="10,10,10,0" HorizontalAlignment="Center"><!--tassa on ongelmia, ei nay kunnolla toinen laita -->
                 <TextBlock Text="Pelaaja 2" Width="100" FontSize="20" VerticalAlignment="Center" Margin="10,10,0,0"/>
-                    <TextBox x:Name="Player2" Width="250" Margin="515,0"/><!-- tama laittaa kaiken keskelle?-->
+                    <TextBox x:Name="Player2" Width="250" /><!--Margin="515,0" tama laittaa kaiken keskelle?-->
             </StackPanel>
 
             <Button x:Name="StartButton" Content="Aloita peli"
