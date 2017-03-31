@@ -20,30 +20,19 @@ namespace kalevala
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class GamePage : Page
+    public sealed partial class Scores : Page
     {
-        public GamePage()
+        public Scores()
         {
             this.InitializeComponent();
         }
-
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void WaterButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void EndGame_Click(object sender, RoutedEventArgs e)
-        {
-            Frame RootFrame = Window.Current.Content as Frame;
-            if (RootFrame == null) return;
-            if (RootFrame.CanGoBack)
+            Frame rootFrame = Window.Current.Content as Frame;
+            if (rootFrame == null) return;
+            if (rootFrame.CanGoBack)
             {
-                RootFrame.GoBack();
+                rootFrame.GoBack();
             }
         }
     }

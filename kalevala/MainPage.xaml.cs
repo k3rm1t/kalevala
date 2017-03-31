@@ -34,13 +34,13 @@ namespace kalevala
 
         private void HighScore_Click(object sender, RoutedEventArgs e)
         {
-            // no done yet
-            //Frame.Navigate(typeof(HighScore));
+            
+            Frame.Navigate(typeof(Scores));
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-
+            //System.Environment.Exit(1);
         }
     }
 }
