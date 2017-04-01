@@ -40,21 +40,54 @@
                     <ColumnDefinition Width="Auto"/>
 
                 </Grid.ColumnDefinitions>
-            <!--    <Button x:Name="WaterButton" Click="WaterButton_Click"  
-                        Grid.Column="0" Grid.Row="0" Margin="5" >
-                    <StackPanel Orientation="Horizontal">
+
+    
+                <Button x:Name="WaterButton" Click="WaterButton_Click" Grid.Column="0" Grid.Row="0" Margin="5">
+                    <StackPanel>
+                            <Image Source="/Assets/water.png"/>
+                        </StackPanel>  
+                </Button>
+                <Button x:Name="WaterButton1" Click="WaterButton_Click" Grid.Column="0" Grid.Row="1" Margin="5">
+                    <StackPanel>
                         <Image Source="/Assets/water.png"/>
                     </StackPanel>
                 </Button>
-                <Button x:Name="WaterButton" Click="WaterButton_Click"  
-                        Grid.Column="0" Grid.Row="1" Margin="5" >
-                    <StackPanel Orientation="Horizontal">
+                <Button x:Name="WaterButton2" Click="WaterButton_Click" Grid.Column="1" Grid.Row="0" Margin="5">
+                    <StackPanel>
                         <Image Source="/Assets/water.png"/>
                     </StackPanel>
                 </Button>
-               -->
-                
-                <Image Source="/Assets/water.png" Grid.Column="0" Grid.Row="0" Margin="5" />
+                <Button x:Name="WaterButton3" Click="WaterButton_Click" Grid.Column="1" Grid.Row="1" Margin="5">
+                    <StackPanel>
+                        <Image Source="/Assets/water.png"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="WaterButton4" Click="WaterButton_Click" Grid.Column="2" Grid.Row="0" Margin="5">
+                    <StackPanel>
+                        <Image Source="/Assets/water.png"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="WaterButton5" Click="WaterButton_Click" Grid.Column="2" Grid.Row="1" Margin="5">
+                    <StackPanel>
+                        <Image Source="/Assets/water.png"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="WaterButton6" Click="WaterButton_Click" Grid.Column="0" Grid.Row="3" Margin="5">
+                    <StackPanel>
+                        <Image Source="/Assets/water.png"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="WaterButton7" Click="WaterButton_Click" Grid.Column="1" Grid.Row="3" Margin="5">
+                    <StackPanel>
+                        <Image Source="/Assets/water.png"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="WaterButton8" Click="WaterButton_Click" Grid.Column="2" Grid.Row="3" Margin="5">
+                    <StackPanel>
+                        <Image Source="/Assets/water.png"/>
+                    </StackPanel>
+                </Button>
+                <!--
                 <Image Source="/Assets/water.png" Grid.Column="0" Grid.Row="1" Margin="5"/>
                 <Image Source="/Assets/water.png" Grid.Column="0" Grid.Row="2" Margin="5"/>
                 <Image Source="/Assets/water.png" Grid.Column="0" Grid.Row="3" Margin="5"/>
@@ -65,7 +98,7 @@
                 <Image Source="/Assets/water.png" Grid.Column="1" Grid.Row="2" Margin="5"/>
                 <Image Source="/Assets/water.png" Grid.Column="1" Grid.Row="3" Margin="5"/>
                 <Image Source="/Assets/water.png" Grid.Column="1" Grid.Row="4" Margin="5"/>
-                <!--<Image Source="/Assets/water.png" Grid.Column="1" Grid.Row="5" Margin="5"/>-->
+                
                 <Image Source="/Assets/water.png" Grid.Column="2" Grid.Row="0" Margin="5"/>
                 <Image Source="/Assets/water.png" Grid.Column="2" Grid.Row="1" Margin="5"/>
                 <Image Source="/Assets/water.png" Grid.Column="2" Grid.Row="2" Margin="5"/>
@@ -91,7 +124,7 @@
                 <Image Source="/Assets/water.png" Grid.Column="5" Grid.Row="4" Margin="5"/>
                 <Image Source="/Assets/water.png" Grid.Column="5" Grid.Row="5" Margin="5"/>
 
-
+-->
 
             </Grid>
 
@@ -113,19 +146,23 @@
         
         <!-- Grid 1 begins-->
         <StackPanel Margin="10,0,0,0" Grid.Column="1">
+            
             <StackPanel HorizontalAlignment="Center">
                 <TextBlock Text="Pisteet" FontSize="30" Padding="20,20,20,0"/>
-                
             </StackPanel>
-            <StackPanel Margin="10,0,0,0" Orientation="Horizontal">
-                <TextBlock Text="nimi" FontSize="30" Padding="50,0,0,0"/>
-                <TextBlock Text ="Points" FontSize="30" Padding="70,0,0,0" />
-            </StackPanel>
-            <StackPanel Margin="10,0,0,0" Orientation="Horizontal">
-                <TextBlock Text="Nimi" FontSize="30" Padding="50,2,0,0"/>
-                <TextBlock Text="Points" FontSize="30" Padding="70,0,0,0"/>
-            </StackPanel>
+            
+                <StackPanel Margin="10,0,0,0" Orientation="Horizontal" >
+                <TextBlock x:Name="Playername1" FontSize="30" Padding="50,0,0,0"/>
+                    <TextBlock x:Name ="Player1Points" Text ="Points" FontSize="30" Padding="70,0,0,0"/>
+                </StackPanel>
+                <StackPanel Margin="10,0,0,0" Orientation="Horizontal">
+                    <TextBlock x:Name="Playername2" FontSize="30" Padding="50,2,0,0"/>
+                    <TextBlock x:Name ="Player2Points" Text="Points" FontSize="30" Padding="70,0,0,0"/>
+                </StackPanel>
+            
+            
             <StackPanel>
+                
                 <!--"poistu" button -->
                 <Button x:Name="EndGame" Content="Lopeta peli"
                         HorizontalAlignment="Center"

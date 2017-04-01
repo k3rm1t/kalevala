@@ -22,6 +22,29 @@ namespace kalevala
     /// </summary>
     public sealed partial class GamePage : Page
     {
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // Here Player names come to GamePage
+            if (e.Parameter is Player)
+            {
+                Player player = (Player)e.Parameter;
+                Playername1.Text = player.Name1;
+                Playername2.Text = player.Name2;
+                
+            }
+            else
+            {
+                //How can i get something here...
+                Playername1.Text= "Unknown";
+                Playername2.Text = "tuntematon";
+            }
+            base.OnNavigatedTo(e);
+        }
+        
+        private void InitializeComponents()
+        {
+            
+        }
         public GamePage()
         {
             this.InitializeComponent();
@@ -31,9 +54,28 @@ namespace kalevala
         {
 
         }
+        // kokeillaan saako tällä jotain aikaan napin painamisen suhteen
+        /*private void waterbuttonUnchecked(object sender,RoutedEventArgs e)
+        {
+            SetImage("/Assets/water.png");
+        }
+        private void waterbuttonChecked(object sender, RoutedEventArgs e)
+        {
+            SetImage("/Assets/ahven");
+        }
+        */
 
         private void WaterButton_Click(object sender, RoutedEventArgs e)
         {
+            if(clickedWaterButton != null) { }
+            /* IsPlaying = false;
+             Random rand = new Random();
+             if (IsPlaying == false)
+             {
+                 WaterButton.Source = 
+             }*/
+           // waterbuttonUnchecked();
+            //waterbuttonChecked();
 
         }
 

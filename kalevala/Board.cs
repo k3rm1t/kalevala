@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 /// <summary>
 /// This is Board. Here it is programmed
 /// Teemu Joutulainen alias k3rm1t
@@ -11,44 +12,29 @@ using System.Threading.Tasks;
 /// </summary>
 namespace kalevala
 {
-    class Board
+    class Board:Panel
     {
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public int PointCounter { get; set; }
-        public List<Panel> Panels { get; set; }
-        public GameStatus Status { get; set; }
-       /* public GameBoard(int width, int height, int fishes) // find out about this
+        Panel Clicked = null;
+        Random rand = new Random();
+        List<string> pictures = new List<string>()
         {
-            Width = width;
-            Height = height;
-            //PointCounter = points;
-            Panels = new List<Panel>();
-            int id = 1;
-            for (int i=1; i<= height; i++)
+            "/Assets/ahven.png",
+            "/Assets/vainamoinen.png",
+            "/Assets/wave.png"
+        };
+        /*
+        private void AssingFishToGamePage()
+        {
+            foreach(Control button in GamePage.Controls)
             {
-                for (int j = 1; j<=width; j++)
+                Panel iconPanel = control as Panel;
+                if (iconPanel != null)
                 {
-                    Panels.Add(new Panel(id, j, i));
-                    id++;
+                    int randomNumber = rand.Next(iconButton.Count);
+                    iconPanel.image = pictures[randomPicture];
+                    pictures.RemoveAt(RandomNumber);
                 }
             }
-            Status = GameStatus.InProgress;
         }*/
-        public enum GameStatus
-        {
-            InProgress,
-            Failed,
-            Completed
-        }
-        public void PlaceFishes(int x, int y, Random rand)
-        {
-           
-           /* foreach (var fishCoord in GameBoard) // work here
-            {
-                Panels.Single(panel => panel.X == 0);
-            }*/
-            
-        }
     }
 }

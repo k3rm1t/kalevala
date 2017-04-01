@@ -26,21 +26,25 @@ namespace kalevala
         {
             this.InitializeComponent();
         }
-
+            // Starts game
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(GamePage));
+            Player player = new Player { Name1 = Player1.Text, Name2 = Player2.Text  };
+            
+            this.Frame.Navigate(typeof(GamePage),player);
         }
 
         private void HighScore_Click(object sender, RoutedEventArgs e)
         {
-            
+            // navigate to Highscore  page
             Frame.Navigate(typeof(Scores));
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            //System.Environment.Exit(1);
+            //Application.Exit();
+            //Environment.Exit(0);
+            
         }
     }
 }
