@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -11,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -40,7 +42,18 @@ namespace kalevala
             }
             base.OnNavigatedTo(e);
         }
-        
+        int count = 0;
+        private int ClickCounter()
+        {
+            
+            count++;
+            Debug.WriteLine(count);
+            if (count == 30)
+            {
+                Debug.WriteLine("END GAME");
+            }
+            return count;
+        }
         private void InitializeComponents()
         {
             
@@ -54,6 +67,7 @@ namespace kalevala
         {
 
         }
+        
         // kokeillaan saako tällä jotain aikaan napin painamisen suhteen
         /*private void waterbuttonUnchecked(object sender,RoutedEventArgs e)
         {
@@ -67,6 +81,7 @@ namespace kalevala
 
         private void WaterButton_Click(object sender, RoutedEventArgs e)
         {
+            
             // painettu kuva
             Image image = sender as Image;
             BitmapImage BitmapImage = new BitmapImage();
@@ -88,6 +103,7 @@ namespace kalevala
                         Debug.WriteLine("ei kalaa"); }
             //}
 
+            int counter = ClickCounter();
         }
 
         private void EndGame_Click(object sender, RoutedEventArgs e)
