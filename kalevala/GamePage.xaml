@@ -88,42 +88,76 @@
                     </StackPanel>
                 </Button>
                 <!--
-                <Image Source="/Assets/water.png" Grid.Column="0" Grid.Row="1" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="0" Grid.Row="2" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="0" Grid.Row="3" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="0" Grid.Row="4" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="0" Grid.Row="5" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="1" Grid.Row="0" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="1" Grid.Row="1" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="1" Grid.Row="2" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="1" Grid.Row="3" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="1" Grid.Row="4" Margin="5"/>
-                
-                <Image Source="/Assets/water.png" Grid.Column="2" Grid.Row="0" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="2" Grid.Row="1" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="2" Grid.Row="2" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="2" Grid.Row="3" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="2" Grid.Row="4" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="2" Grid.Row="5" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="3" Grid.Row="0" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="3" Grid.Row="1" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="3" Grid.Row="2" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="3" Grid.Row="3" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="3" Grid.Row="4" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="3" Grid.Row="5" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="4" Grid.Row="0" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="4" Grid.Row="1" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="4" Grid.Row="2" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="4" Grid.Row="3" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="4" Grid.Row="4" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="4" Grid.Row="5" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="5" Grid.Row="0" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="5" Grid.Row="1" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="5" Grid.Row="2" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="5" Grid.Row="3" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="5" Grid.Row="4" Margin="5"/>
-                <Image Source="/Assets/water.png" Grid.Column="5" Grid.Row="5" Margin="5"/>
-
+                                <Image x:Name="water00" Source="/Assets/water.png" Grid.Column="0" Grid.Row="0" Margin="5"
+                      Tapped="WaterButton_Click" />
+                <Image x:Name="water01" Source="/Assets/water.png" Grid.Column="0" Grid.Row="1" Margin="5"
+                      Tapped="WaterButton_Click" />
+                <Image x:Name ="water02" Source="/Assets/water.png" Grid.Column="0" Grid.Row="2" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water03" Source="/Assets/water.png" Grid.Column="0" Grid.Row="3" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name ="water04" Source="/Assets/water.png" Grid.Column="0" Grid.Row="4" Margin="5"
+                       Tapped="WaterButton_Click" />
+                <Image x:Name="water05" Source="/Assets/water.png" Grid.Column="0" Grid.Row="5" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water10" Source="/Assets/water.png" Grid.Column="1" Grid.Row="0" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water11" Source="/Assets/water.png" Grid.Column="1" Grid.Row="1" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water12" Source="/Assets/water.png" Grid.Column="1" Grid.Row="2" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water13" Source="/Assets/water.png" Grid.Column="1" Grid.Row="3" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water14" Source="/Assets/water.png" Grid.Column="1" Grid.Row="4" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water20" Source="/Assets/water.png" Grid.Column="2" Grid.Row="0" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water21" Source="/Assets/water.png" Grid.Column="2" Grid.Row="1" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water22" Source="/Assets/water.png" Grid.Column="2" Grid.Row="2" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water23" Source="/Assets/water.png" Grid.Column="2" Grid.Row="3" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water24" Source="/Assets/water.png" Grid.Column="2" Grid.Row="4" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water25" Source="/Assets/water.png" Grid.Column="2" Grid.Row="5" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water30" Source="/Assets/water.png" Grid.Column="3" Grid.Row="0" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water31" Source="/Assets/water.png" Grid.Column="3" Grid.Row="1" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water32" Source="/Assets/water.png" Grid.Column="3" Grid.Row="2" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water33" Source="/Assets/water.png" Grid.Column="3" Grid.Row="3" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water34" Source="/Assets/water.png" Grid.Column="3" Grid.Row="4" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water35" Source="/Assets/water.png" Grid.Column="3" Grid.Row="5" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water40" Source="/Assets/water.png" Grid.Column="4" Grid.Row="0" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water41" Source="/Assets/water.png" Grid.Column="4" Grid.Row="1" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water42" Source="/Assets/water.png" Grid.Column="4" Grid.Row="2" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water43" Source="/Assets/water.png" Grid.Column="4" Grid.Row="3" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water44" Source="/Assets/water.png" Grid.Column="4" Grid.Row="4" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water45" Source="/Assets/water.png" Grid.Column="4" Grid.Row="5" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water50" Source="/Assets/water.png" Grid.Column="5" Grid.Row="0" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water51" Source="/Assets/water.png" Grid.Column="5" Grid.Row="1" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water52" Source="/Assets/water.png" Grid.Column="5" Grid.Row="2" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water53" Source="/Assets/water.png" Grid.Column="5" Grid.Row="3" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water54" Source="/Assets/water.png" Grid.Column="5" Grid.Row="4" Margin="5"
+                       Tapped="WaterButton_Click"/>
+                <Image x:Name="water55" Source="/Assets/water.png" Grid.Column="5" Grid.Row="5" Margin="5"
+                       Tapped="WaterButton_Click"/>
 -->
 
             </Grid>
