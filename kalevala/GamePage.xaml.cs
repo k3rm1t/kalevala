@@ -67,15 +67,26 @@ namespace kalevala
 
         private void WaterButton_Click(object sender, RoutedEventArgs e)
         {
-            if(clickedWaterButton != null) { }
-            /* IsPlaying = false;
-             Random rand = new Random();
-             if (IsPlaying == false)
-             {
-                 WaterButton.Source = 
-             }*/
-           // waterbuttonUnchecked();
-            //waterbuttonChecked();
+            // painettu kuva
+            Image image = sender as Image;
+            BitmapImage BitmapImage = new BitmapImage();
+            //image.Source = new BitmapImage(new Uri("ms-appx:///Assets/ahven.png"));
+
+            Debug.WriteLine("testi");
+            //if(clickedWaterButton != null)
+           // {
+                Random random = new Random();
+                int rand = random.Next(0, 100);
+                if (rand < 49)
+                {
+                if (rand < 49 && rand > 40) { Debug.WriteLine("nuuskamuikkunen"); }
+                else if (rand > 29 && rand < 39) { Debug.WriteLine("haisuli"); }
+                else { image.Source = new BitmapImage(new Uri("ms-appx:///Assets/ahven.png"));  }// laita naihin tapahtumaan oikeita asioita
+                }
+                else {
+                image.Source = new BitmapImage(new Uri("ms-appx:///Assets/wave.png"));
+                        Debug.WriteLine("ei kalaa"); }
+            //}
 
         }
 
